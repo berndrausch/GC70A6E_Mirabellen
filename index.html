@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GC8231T (Mirabellenweg)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1><a href="https://www.geocaching.com/geocache/GC8231T">GC8231T (Mirabellenweg)</a></h1>
+
+    <div id="app">
+      <table>
+        <tr>
+          <td>A (lateinische Name)</td>
+          <td><input v-model="A"></td>
+          <td>{{ A1 }}</td>
+        </tr>
+        <tr>
+          <td>B (Kronblätter)</td>
+          <td><input v-model="B"></td>
+          <td>{{ B1 }}</td>
+        </tr>        
+        <tr>
+          <td>C (erstbeschrieben)</td>
+           <td><input v-model="C"></td>
+          <td>{{ C1 }}</td>
+        </tr>
+        <tr>
+          <td>D (Sorten)</td>
+           <td><input v-model="D"></td>
+          <td>{{ D1 }}</td>
+        </tr>
+        <tr>
+          <td>E (Destillat)</td>
+           <td><input v-model="E"></td>
+          <td>{{ E1 }}</td>
+        </tr>
+        <tr>
+          <td>Solution</td>
+          <td>N 49° 18.{{ North }} E 008° 32.{{ East }}</td>
+        </tr>
+      </table>
+
+      <button v-on:click="update">Update</button>
+    </div>
+
+    <a href="http://www.geochecker.com/index.php?code=bf7484016f7f9e933ab6c8dfc4c2b55c&action=check&wp=47433730413645&name=4d69726162656c6c656e776567205b52656c6f616465645d">Check with GeoCheck</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
